@@ -1,0 +1,29 @@
+# package files
+*.jar
+*.war
+*.ear
+
+# maven
+target
+.mvn/
+
+# intellij
+*.iml
+.idea/
+mvnw
+mvnw.cmd
+out
+
+# gradle
+**/.gradle/
+**/build/
+**/classes/
+
+!gradle-wrapper.jar
+.gradletasknamecache
+
+
+LOG_PATH_IS_UNDEFINED/
+
+rename.sh
+init.sh
