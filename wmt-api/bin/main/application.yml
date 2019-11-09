@@ -1,0 +1,14 @@
+spring:
+    http:
+        encoding:
+            charset: UTF-8
+    mvc:
+        view:
+            prefix: /jsp/
+            suffix: .jsp
+    output:
+        ansi:
+            enabled: always
+server:
+    tomcat:
+        uri-encoding: UTF-8
