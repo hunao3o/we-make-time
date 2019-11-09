@@ -51,6 +51,7 @@ out
 **/.gradle/
 **/build/
 **/classes/
+**/bin/
 
 !gradle-wrapper.jar
 .gradletasknamecache
