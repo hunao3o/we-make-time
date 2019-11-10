@@ -6,9 +6,24 @@ spring:
         view:
             prefix: /jsp/
             suffix: .jsp
+
+    # 스프링 터미널 컬러 테마 적용
     output:
         ansi:
             enabled: always
+
+    # h2 콘솔로 DB 확인 가능
+    # localhost:8080/h2-console 로 접근 (현재 작동 안함 왜지?)
+    h2:
+        console:
+            enabled: true
+
+    datasource:
+        url: jdbc:mysql://127.0.0.1:3306/test?autoReconnect=true&useSS=false&serverTimezone=UTC&characterEncoding=UTF-8
+        username: root
+        password: 'ama0528'
+        driver-class-name: com.mysql.jdbc.Driver
+
 server:
     tomcat:
         uri-encoding: UTF-8
