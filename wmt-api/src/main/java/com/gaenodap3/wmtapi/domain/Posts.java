@@ -9,6 +9,7 @@ import javax.persistence.Id;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
  * @Entity : JpaRepository 가 사용하는 Entity 라고 명시, 테이블과 링크될 클래스임을 나타냄.
@@ -18,6 +19,7 @@ import lombok.NoArgsConstructor;
  */
 @Entity
 @Data
+@ToString
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Posts {
 
@@ -33,14 +35,14 @@ public class Posts {
 
     private String author; // 굳이 선언하지 않아도 컬럼으로 설정
 
-    // TODO: test에서 lombok (@AllArgsConstructor) 이 먹질 않아서 추가
+    // test에서 lombok (@AllArgsConstructor) 이 먹질 않아서 추가
     public Posts(String title, String content, String author) {
         this.title = title;
         this.content = content;
         this.author = author;
     }
 
-    // TODO: test에서 lombok (@Getter) 이 먹질 않아서 추가
+    // test에서 lombok (@Getter) 이 먹질 않아서 추가
     /**
      * @return the title
      */
