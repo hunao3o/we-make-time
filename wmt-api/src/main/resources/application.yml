@@ -7,6 +7,9 @@ spring:
             prefix: /jsp/
             suffix: .jsp
 
+    cache:
+        ehcache:
+            config: classpath:ehcache.xml
     # 스프링 터미널 컬러 테마 적용
     output:
         ansi:
